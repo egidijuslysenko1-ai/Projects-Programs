@@ -26,31 +26,51 @@ What the Script Does
 This is a visual filtering demonstration, not a physics based MRI simulation
 
 \#Some explanations
+
 T2 Like Contrast Method, The key transformation uses gamma correction:
+
 ```bash
 t2\_mapped = np.power(img\_float, 0.6)
 ```
 Why gamma = 0.6?
+
 \- Gamma < 1 brightens dark regions. I found anything bellow 0.6 to bleach the image too much with 0.6 offering the best balance.
+
 &nbsp;	CSF and fluid spaces appear brighter, similar to T2 weighted MRI.
+
 \- Gamma mapping slightly darkens bright regions
+
 &nbsp;	white matter becomes darker, another T2 like characteristic.
+
 \- Midtones shift upward
+
 &nbsp;	gray matter becomes more visible.
+
 This produces a contrast profile that resembles T2 weighting without modeling T1/T2 relaxation physics.
 
 ---
 Important Parameters Explained
+
 cv2.normalize(img, None, 0.0, 1.0, cv2.NORM\_MINMAX)
+
 \- Converts the image to a 0–1 float range
+
 \- Ensures stable gamma behavior regardless of original intensity scale
+
 np.power(img\_float, 0.6)
+
 \- Main contrast transformation
+
 \- Lower gamma → stronger T2 like effect
+
 \- Adjustable depending on desired appearance
+
 np.hstack((img\_labeled, t2\_labeled))
+
 \- Combines both images horizontally for direct visual comparison
+
 cv2.putText(...)
+
 \- Adds labels directly onto each image for clarity
 
 
@@ -67,6 +87,7 @@ The output is a visual approximation only, created using simple image processing
 The example T1‑weighted MRI image used in this project is based on a sagittal T1‑weighted scan showing normal midline brain structures.  
 Original image and description courtesy of the MSD Manual Professional Edition and Hakan Ilaslan, MD:  
 https://www.msdmanuals.com/professional/multimedia/image/t1-weighted-mri
+
 
 
 
