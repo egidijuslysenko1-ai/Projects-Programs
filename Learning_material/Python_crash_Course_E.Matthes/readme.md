@@ -16,9 +16,10 @@
 # Reference
 
 This repository follows the exercises and examples from  
-# Python Crash Course (3rd Edition) by Eric Matthes\*\*  
-# Publisher: No Starch Press  
-# \[Official book page](https://nostarch.com/python-crash-course-3rd-edition)
+Python Crash Course (3rd Edition) by Eric Matthes\*\*  
+Publisher: No Starch Press  
+[Official book page](https://nostarch.com/python-crash-course-3rd-edition)
+
 
 
 
