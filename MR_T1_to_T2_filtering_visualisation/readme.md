@@ -59,7 +59,7 @@ t2\_mapped = np.power(img\_float, 0.6)
 
 Why gamma = 0.6?
 
-\- Gamma < 1 brightens dark regions
+\- Gamma < 1 brightens dark regions. I found anything bellow 0.6 to bleach the image too much with 0.6 offering the best balance.
 
 &nbsp;	CSF and fluid spaces appear brighter, similar to T2 weighted MRI.
 
@@ -118,6 +118,7 @@ This project is strictly for educational and visualization purposes.
 \- It must not be used for clinical decision making
 
 The output is a visual approximation only, created using simple image processing filters.
+
 
 
 
