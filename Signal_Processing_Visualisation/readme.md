@@ -12,13 +12,17 @@ Visualizes results using plots
 Helps build intuition for filtering, smoothing, and noise reduction
 
 Libraries Required
+
 This program uses the following Python libraries:
 
 numpy – numerical calculations
+
 matplotlib – plotting and visualization
+
 scipy – Gaussian filtering functions
 
 Installation
 Make sure you have Python 3 installed, then install the required libraries using:
 pip install numpy matplotlib scipy
+
 
