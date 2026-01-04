@@ -1,4 +1,4 @@
-This is a small Python program designed to help practice linear equations in an interactive way.
+# This is a small Python program designed to help practice linear equations in an interactive way.
 
 The program has two main modes:
 
@@ -19,4 +19,5 @@ Linear equations;
 Randomized problem generation;
 User input and validation;
 Control flow (if / elif / else, loops)
+
 Functions and return values
